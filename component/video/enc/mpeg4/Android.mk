@@ -8,7 +8,8 @@ LOCAL_SRC_FILES := \
 	library_register.c
 
 LOCAL_PRELINK_MODULE := false
-LOCAL_MODULE := libOMX.Exynos.MPEG4.Encoder
+LOCAL_MODULE :=libOMX.Exynos.MPEG4.Encoder
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_RELATIVE_PATH := omx
 
 LOCAL_CFLAGS := \

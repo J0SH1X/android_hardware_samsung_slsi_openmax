@@ -11,6 +11,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE := libExynosOMX_SkypeHD_Enc
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_CFLAGS := \
     -Wno-enum-conversion \
@@ -57,6 +58,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE := libExynosOMX_SkypeHD_Dec
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_CFLAGS := -DUSE_SKYPE_HD
 LOCAL_CFLAGS += -DBUILD_DEC
@@ -109,6 +111,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE := libExynosOMX_OSAL
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_CFLAGS := \
     -Wno-enum-conversion \
@@ -169,7 +172,7 @@ LOCAL_CFLAGS += -DUSE_MFC5X_ALIGNMENT
 endif
 
 LOCAL_SHARED_LIBRARIES := libion libhardware libnativewindow libui
-LOCAL_STATIC_LIBRARIES := liblog libcutils libExynosVideoApi
+LOCAL_STATIC_LIBRARIES := libcutils libExynosVideoApi
 
 LOCAL_C_INCLUDES := \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
